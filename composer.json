@@ -7,6 +7,7 @@
             "email": "usman.akram99@hotmail.com"
         }
     ],
+    "minimum-stability": "dev",
     "require": {
         "php": "^7.1.2"
     },
