@@ -1,6 +1,8 @@
 {
     "name": "usmanakram/php-autoload-hello-world",
     "description": "My first Composer project.",
+    "type": "library",
+    "license": "MIT",
     "authors": [
         {
             "name": "Usman Akram",
