@@ -7,10 +7,12 @@ Files Structure
 We can put all files inside the main dir, but recommended way is to create another dir, as `src` to be easier to understand and maintain our code organized. The project structure will start with the follow: `php-autoload-hello-world/src/HelloWorld/`
 
 We will create our classes inside "HelloWorld" directory.
-	
+
+Let's create a class named `OurFirstClass`.
+
 `/php-autoload-hello-world/src/HelloWorld/OurFirstClass.php`
 
-```
+```php
 namespace HelloWorld;
 
 class OurFirstClass
@@ -74,14 +76,14 @@ To test our working code, create `tests/test.php` file inside root directory and
 
 Create repository named `php-autoload-hello-world` at github. And run following commands inside our project root directory.
 
-```
-git init
-git remote add origin git@github.com:usmanakram/php-autoload-hello-world.git
-git add --all
-git commit -m "initial files"
-git tag -a v1.0.0 -m "initial release"
-git push -u origin master
-git push --tags
+```bash
+$ git init
+$ git remote add origin git@github.com:usmanakram/php-autoload-hello-world.git
+$ git add --all
+$ git commit -m "initial files"
+$ git tag -a v1.0.0 -m "initial release"
+$ git push -u origin master
+$ git push --tags
 ```
 
 #### Publish at Packagist
@@ -99,14 +101,14 @@ Here is the reference link: `https://packagist.org/about#how-to-update-packages`
 
 To use your library, simply run following commands
 
-```
+```bash
 $ composer init
 $ composer require usmanakram/php-autoload-hello-world
 ```
 
 Then create an `index.php` file that will load the autoloader
 
-```
+```php
 require 'vendor/autoload.php';
 
 use HelloWorld\OurFirstClass;
