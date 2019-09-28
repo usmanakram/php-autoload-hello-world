@@ -39,5 +39,33 @@ git add --all
 git commit -m "initial files"
 git tag -a v1.0.0 -m "initial release"
 git push -u origin master
+git push --tags
 ```
 
+#### Publish at Packagist
+
+Now, we need to publish our project at `Packagist`.
+Login at github.com and go to our newly created repository page. Click `Settings` > `Webhooks` > `Add Webhook`. Here we need to put our `Packagist` detail.
+
+Under 
+ - `Payload URL` put `https://packagist.org/api/github?username=usmanakram`
+ - `Content Type` select `application/json`
+ - `Secret` put your Packagist API token (you will find API token at https://packagist.org/profile/)
+
+Here is the reference link: `https://packagist.org/about#how-to-update-packages`
+
+
+To use your library, simply
+
+```
+composer init
+composer require usmanakram/php-autoload-hello-world
+```
+
+Then create an index.php file that will load the autoloader
+
+```
+require 'vendor/autoload.php';
+```
+
+All the classes inside our library is now ready to use!
