@@ -76,6 +76,13 @@ To test our working code, create `tests/test.php` file inside root directory and
 
 #### Uploading code at GitHub
 
+Create file named `.gitignore` and put following line in it.
+
+```
+/vendor/
+composer.lock
+```
+
 Create repository named `php-autoload-hello-world` at github. And run following commands inside our project root directory.
 
 ```bash
