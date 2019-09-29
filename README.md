@@ -30,6 +30,8 @@ Now we need to have `composer.json` file. For that we need to go inside our proj
 {
     "name": "usmanakram/php-autoload-hello-world",
     "description": "My first Composer project.",
+    "type": "library",
+    "license": "MIT",
     "authors": [
         {
             "name": "Usman Akram",
@@ -39,7 +41,6 @@ Now we need to have `composer.json` file. For that we need to go inside our proj
     "minimum-stability": "dev",
     "require": {}
 }
-
 ```
 
 Add some configuration in `composer.json`
@@ -48,6 +49,8 @@ Add some configuration in `composer.json`
 {
     "name": "usmanakram/php-autoload-hello-world",
     "description": "My first Composer project.",
+    "type": "library",
+    "license": "MIT",
     "authors": [
         {
             "name": "Usman Akram",
@@ -64,7 +67,6 @@ Add some configuration in `composer.json`
         }
     }
 }
-
 ```
 
 Now, run `$ composer install` inside root directory. It will create `vendor` directory and `composer.lock` file inside root directory.
